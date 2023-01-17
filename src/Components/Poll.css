@@ -1,0 +1,30 @@
+.poll{
+    background-color: #4a5459;
+    display: flex;
+    
+    margin-bottom: 5px;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+    border-radius: 10px;
+    width: 68%;
+    position: sticky !important;
+    left: 19%;
+  
+}
+.poll-elements{
+border: 2px solid ;
+height: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 13%;
+border-radius: 10px;
+}
+.poll-elements:hover{
+    cursor: pointer;
+    border-color:#ffc83d ;
+    color: #ffc83d;
+    background-color: #00bcf2;
+    font-weight: bolder;
+}
