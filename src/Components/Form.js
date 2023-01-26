@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import '../Components/Form.css'
 import { useNavigate, } from 'react-router-dom';
 import axios from 'axios';
@@ -8,10 +8,20 @@ export default function Form() {
   const [password, seTpassword] = useState('')
   const [email, seTemail] = useState('')
   let navigate = useNavigate();
+  useEffect(()=>{
+    if(localStorage.getItem("logged_in")=="yes"){
+      navigate('/Room');
+      
+    }
+     if(localStorage.getItem("logged_in")=="no"){
+       navigate('/')
+     }
+  },[])
+  const url="https://liveiplscore-backend.onrender.com"
   const Handleclick = () => {
     axios({
       method: 'post',
-      url: 'http://localhost:3001/register',
+      url: `${url}/register`,
       data: {
         name: name,
         email: email,

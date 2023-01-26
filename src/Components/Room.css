@@ -80,6 +80,7 @@ div::-webkit-scrollbar {
   text-align: center;
   margin: 5px;
   color: #ffc83d;
+  padding: 5px;
   border-radius: 5px;
 }
 
@@ -211,4 +212,18 @@ div::-webkit-scrollbar {
   clear: both;
   float: right;
   clear: both;
+}
+.logoutbtn{
+  width: 80px;
+  height: 30px;
+  margin: 20px;
+  background-color: #4a5459;
+  color: #00bcf2;
+  border: none;
+  border-radius: 20px;
+}
+.logoutbtn:hover{
+  background-color:#00bcf2;
+  color: #4a5459;
+  cursor: pointer;
 }
